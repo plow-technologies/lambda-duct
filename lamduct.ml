@@ -257,13 +257,8 @@ end = struct
       | n when n = sigttou   -> "Terminal write from background process"
       | n when n = sigvtalrm -> "Timeout in virtual time"
       | n when n = sigprof   -> "Profiling interrupt"
-      | n when n = sigbus    -> "Bus error"
-      | n when n = sigpoll   -> "Pollable event"
-      | n when n = sigsys    -> "Bad argument to routine"
-      | n when n = sigtrap   -> "Trace/breakpoint trap"
-      | n when n = sigurg    -> "Urgent condition on socket"
-      | n when n = sigxcpu   -> "Timeout in cpu time"
-      | n when n = sigxfsz   -> "File size limit exceeded"
+
+
       | _                    -> "Unknown reason"
   end
 
